@@ -1,0 +1,85 @@
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  justify-content: center;
+  align-items: center;
+}
+.modal .modalContainer {
+  background-color: #fefefe;
+  padding: 20px;
+  border-radius: 10px;
+  width: 90%;
+  max-width: 600px;
+  max-height: 90%;
+  overflow-y: auto;
+}
+.modal .modalContainer::-webkit-scrollbar {
+  width: 5px;
+}
+.modal .modalContainer::-webkit-scrollbar-thumb {
+  background-color: #EC4A7D;
+  border-radius: 20px;
+}
+.modal .modalContainer .headerModal {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.modal .modalContainer .headerModal h1 {
+  margin-bottom: 20px;
+  font-family: "Alfa Slab One", sans-serif;
+}
+.modal .modalContainer .headerModal img {
+  cursor: pointer;
+  width: 24px;
+  height: 24px;
+}
+
+.deletarContainer {
+  font-family: "Montserrat", sans-serif;
+  font-size: 23px;
+  color: rgba(0, 0, 0, 0.6);
+}
+.deletarContainer .texto1 {
+  color: black;
+  font-weight: bold;
+}
+.deletarContainer .bttDeletar {
+  display: flex;
+  justify-content: flex-end;
+}
+.deletarContainer .bttDeletar .confirmar {
+  font-size: 14px;
+  color: white;
+  background-color: #EC4A7D;
+  width: 220px;
+  height: 35px;
+  border-radius: 18px;
+  border: none;
+  margin-top: 15px;
+  box-sizing: border-box;
+  cursor: pointer;
+  padding: 10px;
+}
+.deletarContainer .bttDeletar .cancelar {
+  font-size: 14px;
+  color: #EC4A7D;
+  background-color: white;
+  width: 220px;
+  height: 35px;
+  border-radius: 18px;
+  border: solid 1px #EC4A7D;
+  margin-top: 15px;
+  margin-right: 20px;
+  box-sizing: border-box;
+  cursor: pointer;
+  padding: 10px;
+}
+
+/*# sourceMappingURL=modalDeletarConta.css.map */

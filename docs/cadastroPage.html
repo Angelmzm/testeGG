@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cadastro</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Alfa+Slab+One&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="cadastroPage.css" />
+  </head>
+  <body>
+
+    <header>
+
+      <div class="logoHeader">
+          <a href="admMainPage.html">
+          <img src="imagens/logoRosa.png" alt="Logo" >
+      </a>
+      </div>
+
+      <nav class="nav">
+          <ul>
+            <li><a href="lancamentoPage.html" href="#lancamento">Lançamentos</a></li>
+            <li><a href="maisVendidosPage.html" href="#maisVendidos">Mais Vendidos</a></li>
+            <li class="categoriasMenu">
+              <a href="#categorias" class="categoriasLink">Categorias</a>
+              <ul class="submenu">
+                <li><a href="maquiagemPage.html">Maquiagem</a></li>
+                <li><a href="unhasPage.html">Unhas </a></li>
+                <li><a href="cabeloPage.html">Cabelo </a></li>
+                <li><a href="perfumePage.html">Perfume </a></li>
+              </ul>
+            </li>
+          </ul>
+        </nav>
+
+      <div class="barraPesquisa">
+          <input type="text">
+          <button class="bttLupa" type="submit">
+              <img class="imgLupa" src="imagens/Lupa.png" alt="Buscar">
+          </button>
+      </div>
+
+      <div>
+          <a href="carrinhoPage.html">
+              <img class="imgCarrinho" src="imagens/carrinho.png" alt="Carrinho">
+          </a>
+      </div>
+
+      <div>
+          <a href="loginPage.html">
+              <img class="imgConta" src="imagens/conta.png" alt="dados pessoais">
+          </a>
+      </div>
+  </header>
+
+    <main>
+      <div class="cadastroPage">
+        <div class="cadastroContainer">
+          <h2 class="tCadastro">Cadastro</h2>
+          <form
+            class="cadastroForm"
+            action="https://webhook.site/046e3a18-77e2-47ae-a451-41a8c4d28fef"
+            method="post"
+          >
+            <div>
+              <label for="nome">Nome:</label>
+              <input
+                type="text"
+                id="nome"
+                name="nome"
+                placeholder="Digite seu nome"
+              />
+            </div>
+
+            <div>
+              <label for="email">Email:</label>
+              <input
+                type="email"
+                id="email"
+                name="email"
+                placeholder="Digite seu email"
+                required
+              />
+            </div>
+
+            <div>
+              <label for="cpf">CPF:</label>
+              <input
+                type="text"
+                id="cpf"
+                name="cpf"
+                pattern="\d{3}\.\d{3}\.\d{3}-\d{2}"
+                placeholder="000.000.000-00"
+                required
+              />
+            </div>
+
+            <div>
+              <label for="celular">Celular:</label>
+              <input
+                type="tel"
+                id="celular"
+                name="celular"
+                pattern="\(\d{2}\) \d{5}-\d{4}"
+                placeholder="(00) 00000-0000"
+                required
+              />
+            </div>
+
+            <div>
+              <label for="senha">Senha:</label>
+              <input
+                type="password"
+                id="senha"
+                name="senha"
+                placeholder="Digite sua senha"
+                required
+              />
+            </div>
+
+            <div>
+              <label for="confirmar_senha">Confirmar Senha:</label>
+              <input
+                type="password"
+                id="confirmar_senha"
+                name="confirmar_senha"
+                placeholder="Confirme sua senha"
+                required
+              />
+            </div>
+
+            <button class="bttCadastrar" type="submit">Cadastrar</button>
+          </form>
+        </div>
+      </div>
+    </main>
+
+    <footer>
+      <div class="footerContainer">
+        <div class="footerLogo">
+          <img src="imagens/logo_preto.png" alt="Logo da Empresa" />
+          <p>Uma loja feita para você que ama comesticos, igual a nós!</p>
+          <p>Compre fácil, rápido e com os melhores preços.</p>
+
+          <div class="icones">
+            <a href="https://twitter.com" target="_blank">
+              <img src="imagens/twitter.png" alt= "Twitter">
+            </a>
+            <a href="https://instagram.com" target="_blank">
+              <img src="imagens/insta.png" alt="Instagram" />
+            </a>
+            <a href="https://github.com" target="_blank">
+              <img src="imagens/github.png" alt="github" />
+            </a>
+          </div>
+        </div>
+
+        <div class="footerColunas">
+          <div class="footerColuna">
+            <h3>Empresa</h3>
+            <ul>
+              <li><a href="#sobre">Sobre</a></li>
+              <li><a href="#trabalhos">Trabalhos</a></li>
+              <li><a href="#carreira">Carreira</a></li>
+            </ul>
+          </div>
+
+          <div class="footerColuna">
+            <h3>Ajuda</h3>
+            <ul>
+              <li><a href="#atendimento">Atendimento ao cliente</a></li>
+              <li><a href="#entrega">Entrega</a></li>
+              <li><a href="#termos">Termos e condições</a></li>
+            </ul>
+          </div>
+
+          <div class="footerColuna">
+            <h3>FAQ</h3>
+            <ul>
+              <li><a href="#conta">Conta</a></li>
+              <li><a href="#pedidos">Pedidos</a></li>
+              <li><a href="#pagamentos">Pagamentos</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script>
+      // header Categorias
+      const categoriasLink = document.getElementById('categoriasLink');
+      const submenu = document.getElementById('submenu');
+
+      categoriasLink.addEventListener('click', function (event) {
+          event.preventDefault(); 
+
+          if (submenu.style.display === 'block') {
+              submenu.style.display = 'none';
+          } else {
+              submenu.style.display = 'block';
+          }
+      });
+
+  </script>
+
+  </body>
+</html>

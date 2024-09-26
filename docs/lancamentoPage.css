@@ -1,0 +1,241 @@
+/* header */
+header {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  margin-top: 30px;
+  height: 50px;
+  border-bottom: 1px solid black;
+  margin-bottom: 15px;
+}
+header .logoHeader {
+  height: 70px;
+}
+header .logoHeader img {
+  height: 50px;
+}
+header a {
+  text-decoration: none;
+  color: #EC4A7D;
+}
+header .nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+header .nav ul li {
+  font-family: "Montserrat", sans-serif;
+  color: #EC4A7D;
+  display: inline;
+  margin-right: 10px;
+}
+header .barraPesquisa {
+  display: flex;
+  justify-content: center;
+}
+header .barraPesquisa input {
+  border: 1px solid #dcdcdc;
+  border-radius: 10px;
+  width: 250px;
+  height: 25px;
+  background-color: #dcdcdc;
+}
+header .barraPesquisa .bttLupa {
+  border: none;
+  background: none;
+}
+header .barraPesquisa .imgLupa {
+  height: 30px;
+}
+header .imgCarrinho, header .imgConta {
+  height: 30px;
+}
+header .categoriasMenu {
+  position: relative;
+}
+header .categoriasMenu .submenu {
+  display: none;
+  position: absolute;
+  background-color: #ffffff;
+  padding: 10px;
+  list-style: none;
+  margin: 0;
+  border: 1px solid #dcdcdc;
+  z-index: 1;
+  top: 100%;
+  left: 0;
+  width: 120px;
+}
+header .categoriasMenu .submenu li {
+  margin-bottom: 5px;
+  display: block;
+}
+header .categoriasMenu .submenu li a {
+  color: #EC4A7D;
+  text-decoration: none;
+  display: block;
+  padding: 5px;
+}
+header .categoriasMenu .submenu li a:hover {
+  text-decoration: underline;
+  background-color: #f0f0f0;
+}
+header .categoriasMenu:hover .submenu {
+  display: block;
+}
+
+/* Footer */
+footer {
+  background-color: #EC4A7D;
+  padding: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  border-top: 1px solid #e0e0e0;
+  font-family: "Montserrat", sans-serif;
+  margin-top: 100px;
+}
+footer .footerContainer {
+  display: flex;
+  align-items: flex-start;
+  width: 100%;
+  margin-bottom: 20px;
+}
+footer .footerContainer .footerLogo {
+  text-align: left;
+  margin-right: 20px;
+}
+footer .footerContainer .footerLogo img {
+  max-width: 200px;
+}
+footer .footerContainer .footerLogo p {
+  margin: 10px 0 0;
+  font-size: 14px;
+  color: rgba(0, 0, 0, 0.6);
+}
+footer .footerContainer .icones {
+  margin-top: 10px;
+}
+footer .footerContainer .icones a {
+  margin: 0 10px;
+  display: inline-block;
+}
+footer .footerContainer .icones a img {
+  width: 24px;
+  height: 24px;
+}
+footer .footerColunas {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin-top: 30px;
+}
+footer .footerColunas .footerColuna {
+  width: 30%;
+  margin-bottom: 20px;
+}
+footer .footerColunas .footerColuna h3 {
+  margin-top: 0;
+  font-size: 16px;
+  color: white;
+}
+footer .footerColunas .footerColuna ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 10px 0 0;
+}
+footer .footerColunas .footerColuna ul li {
+  margin-bottom: 10px;
+}
+footer .footerColunas .footerColuna ul li a {
+  text-decoration: none;
+  color: #ffffff;
+  font-size: 14px;
+}
+footer .footerColunas .footerColuna ul li a:hover {
+  text-decoration: underline;
+}
+
+/* lancamento Page */
+.lancamentoPagecontainer {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+.lancamentoPagecontainer .lancamentoPageSection h1 {
+  text-align: left;
+  margin-bottom: 20px;
+  font-size: 40px;
+  font-family: "Alfa Slab One", sans-serif;
+  color: black;
+  font-weight: bold;
+}
+.lancamentoPagecontainer .lancamentoPageGride {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 20px;
+}
+.lancamentoPagecontainer .lancamentoPageGride .lancamentoProduto {
+  box-sizing: border-box;
+  background-color: #fff;
+  padding: 20px;
+  transition: transform 0.3s;
+  cursor: pointer;
+}
+.lancamentoPagecontainer .lancamentoPageGride .lancamentoProduto:hover {
+  transform: translateY(-5px);
+}
+.lancamentoPagecontainer .lancamentoPageGride .lancamentoProduto img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+.lancamentoPagecontainer .lancamentoPageGride .lancamentoProduto .lancamentoDetalhes {
+  margin-top: 10px;
+  font-family: "Montserrat", sans-serif;
+}
+.lancamentoPagecontainer .lancamentoPageGride .lancamentoProduto .lancamentoDetalhes p {
+  margin: 5px 0;
+  text-align: left;
+  margin-bottom: 10px;
+}
+.lancamentoPagecontainer .lancamentoPageGride .lancamentoProduto .lancamentoDetalhes .nomeLancamento {
+  color: black;
+  font-family: "Montserrat", sans-serif;
+  font-size: 14px;
+  font-weight: bold;
+}
+.lancamentoPagecontainer .lancamentoPageGride .lancamentoProduto .lancamentoDetalhes .precoLancamento {
+  color: #EC4A7D;
+  font-family: "Montserrat", sans-serif;
+  font-size: 14px;
+  font-weight: bold;
+}
+.lancamentoPagecontainer .mudarPagina {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 30px;
+}
+.lancamentoPagecontainer .mudarPagina .bttMudarPagina {
+  background-color: #fff;
+  border: 1px solid #ddd;
+  color: #EC4A7D;
+  padding: 10px 15px;
+  cursor: pointer;
+  margin: 0 5px;
+  border-radius: 5px;
+  transition: background-color 0.3s, color 0.3s;
+}
+.lancamentoPagecontainer .mudarPagina .bttMudarPagina:hover {
+  background-color: #EC4A7D;
+  color: #fff;
+}
+.lancamentoPagecontainer .mudarPagina .bttMudarPagina.ativo {
+  background-color: #EC4A7D;
+  color: white;
+  border-color: #EC4A7D;
+}
+
+/*# sourceMappingURL=lancamentoPage.css.map */

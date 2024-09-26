@@ -1,0 +1,449 @@
+main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+
+.tLogin{
+    font-family: 'Alfa Slab One', sans-serif;
+    font-size: 24px;
+    
+}
+
+.loginContainer{
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: 'Montserrat', sans-serif;
+    background-color: #fdfdfd;
+    border: 2px solid black;
+    display: flex;
+    flex-direction:column;
+    align-content: flex-start;
+    justify-content: space-evenly;
+    width: 380px;
+    height: 500px;
+    padding: 20px; 
+    box-sizing: border-box;
+    margin-bottom: 50px;
+}
+
+.loginForm{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+.loginForm input{
+    padding: 8px;
+    border: 1px solid #EC4A7D; 
+    border-radius: 4px;
+    width: 100%; 
+    max-width: 280px; 
+    margin-bottom: 10px; 
+    box-sizing: border-box;
+}
+
+.loginForm input ::placeholder{
+    font-size: 14px;
+    color: black;
+}
+
+.loginForm label{
+    font-size: 14px;
+    color: black;
+    font-weight: 550;
+    width: 280px; 
+    display: block; 
+    margin-bottom: 5px;
+}
+
+
+.loginForm button{
+    font-size: 14px;
+    color: white;
+    background-color: #EC4A7D;
+    width: 100%; 
+    max-width: 280px; 
+    height: 35px;
+    border-radius: 8px;
+    border: none;
+    margin-top: 15px; 
+    box-sizing: border-box;
+
+}
+
+.loginContainer{
+    font-size: 14px;
+    color: black;
+    font-weight: 550;
+}
+
+.bttCadastroLogin{
+    font-size: 14px;
+    color: #EC4A7D;
+    background-color: white;
+    width: 100%; 
+    max-width: 280px; 
+    height: 35px;
+    border-radius: 8px;
+    border: 1px solid #EC4A7D;
+    margin-top: 15px; 
+    box-sizing: border-box;
+}
+
+
+/* Criar Produto */
+
+.adicionarProdutoContainer{
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: 'Montserrat', sans-serif;
+    background-color: #fdfdfd;
+    border: 2px solid black;
+    display: flex;
+    flex-direction:column;
+    align-content: flex-start;
+    width: 380px;
+    height: 1050px;
+    padding: 20px; 
+    box-sizing: border-box;
+    margin-bottom: 50px;
+}
+
+.headerAdc{
+    display: flex;
+    align-items: center;
+
+}
+
+.headerAdc h1{
+    font-family: 'Alfa Slab One', sans-serif;
+    font-size: 20px;
+    padding: 10px;
+    margin-right: 80px;
+}
+
+.headerAdc img{
+    width: 28px;
+    height: 28px;
+}
+
+.adicionarForm{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+.adicionarForm input{
+padding: 8px;
+border: 1px solid #EC4A7D; 
+border-radius: 4px;
+width: 100%; 
+max-width: 280px; 
+margin-bottom: 20px; 
+box-sizing: border-box;
+}
+
+.adicionarForm select{
+    padding: 8px;
+    border: 1px solid #EC4A7D; 
+    border-radius: 4px;
+    width: 100%; 
+    max-width: 280px; 
+    margin-bottom: 20px; 
+    box-sizing: border-box;
+    }
+
+.adicionarForm input ::placeholder{
+font-size: 14px;
+color: black;
+}
+
+.adicionarForm label{
+font-size: 14px;
+color: black;
+font-weight: 550;
+width: 280px; 
+display: block; 
+margin-bottom: 5px;
+}
+
+
+.adicionarForm button{
+font-size: 14px;
+color: white;
+background-color: #EC4A7D;
+width: 100%; 
+max-width: 280px; 
+height: 35px;
+border-radius: 8px;
+border: none;
+margin-top: 15px; 
+box-sizing: border-box;
+
+}
+
+/* Atualizar Produto */
+
+.atualizarProdutoContainer{
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: 'Montserrat', sans-serif;
+    background-color: #fdfdfd;
+    border: 2px solid black;
+    display: flex;
+    flex-direction:column;
+    align-content: flex-start;
+    width: 380px;
+    height: 1050px;
+    padding: 20px; 
+    box-sizing: border-box;
+    margin-bottom: 50px;
+}
+
+.headerAtl{
+    display: flex;
+    align-items: center;
+}
+
+.headerAtl h1{
+    font-family: 'Alfa Slab One', sans-serif;
+    font-size: 20px;
+    padding: 10px;
+    margin-right: 80px;
+}
+
+.headerAtl img{
+    width: 28px;
+    height: 28px;
+}
+
+.atualizarForm{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+.atualizarForm input{
+padding: 8px;
+border: 1px solid #EC4A7D; 
+border-radius: 4px;
+width: 100%; 
+max-width: 280px; 
+margin-bottom: 20px; 
+box-sizing: border-box;
+}
+
+.atualizarForm select{
+    padding: 8px;
+    border: 1px solid #EC4A7D; 
+    border-radius: 4px;
+    width: 100%; 
+    max-width: 280px; 
+    margin-bottom: 20px; 
+    box-sizing: border-box;
+    }
+
+.atualizarForm input ::placeholder{
+font-size: 14px;
+color: black;
+}
+
+.atualizarForm label{
+font-size: 14px;
+color: black;
+font-weight: 550;
+width: 280px; 
+display: block; 
+margin-bottom: 5px;
+}
+
+
+.atualizarForm button{
+font-size: 14px;
+color: white;
+background-color: #EC4A7D;
+width: 100%; 
+max-width: 280px; 
+height: 35px;
+border-radius: 8px;
+border: none;
+margin-top: 15px; 
+box-sizing: border-box;
+
+}
+
+
+/* Cadastro */
+
+.tCadastro{
+    font-family: 'Alfa Slab One', sans-serif;
+    font-size: 24px;
+}
+
+.cadastroContainer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: 'Montserrat', sans-serif;
+    background-color: #fdfdfd;
+    border: 2px solid black;
+    display: flex;
+    flex-direction:column;
+    align-content: flex-start;
+    justify-content: space-evenly;
+    width: 380px;
+    height: 650px;
+    padding: 20px; 
+    box-sizing: border-box;
+    margin-bottom: 50px;
+}
+
+.cadastroForm{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+.cadastroForm input{
+    padding: 8px;
+    border: 1px solid #EC4A7D; 
+    border-radius: 4px;
+    width: 100%; 
+    max-width: 280px; 
+    margin-bottom: 20px; 
+    box-sizing: border-box;
+}
+
+.cadastroForm input ::placeholder{
+    font-size: 14px;
+    color: black;
+}
+
+.cadastroForm label{
+    font-size: 14px;
+    color: black;
+    font-weight: 550;
+    width: 280px; 
+    display: block; 
+    margin-bottom: 5px;
+}
+
+
+.cadastroForm button{
+    font-size: 14px;
+    color: white;
+    background-color: #EC4A7D;
+    width: 100%; 
+    max-width: 280px; 
+    height: 35px;
+    border-radius: 8px;
+    border: none;
+    margin-top: 15px; 
+    box-sizing: border-box;
+
+}
+
+
+/* Atualizar Dados */
+
+.atualizarDadosContainer{
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: 'Montserrat', sans-serif;
+    background-color: #fdfdfd;
+    border: 2px solid black;
+    display: flex;
+    flex-direction:column;
+    align-content: flex-start;
+    width: 380px;
+    height: 400px;
+    padding: 20px; 
+    box-sizing: border-box;
+    margin-bottom: 50px;
+}
+
+.headerDados{
+    display: flex;
+    align-items: center;
+}
+
+.headerDados h1{
+    font-family: 'Alfa Slab One', sans-serif;
+    font-size: 20px;
+    padding: 10px;
+    margin-right: 80px;
+}
+
+.headerDados img{
+    width: 28px;
+    height: 28px;
+}
+
+.dadosForm{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+.dadosForm input{
+padding: 8px;
+border: 1px solid #EC4A7D; 
+border-radius: 4px;
+width: 100%; 
+max-width: 280px; 
+margin-bottom: 20px; 
+box-sizing: border-box;
+}
+
+.dadosForm select{
+    padding: 8px;
+    border: 1px solid #EC4A7D; 
+    border-radius: 4px;
+    width: 100%; 
+    max-width: 280px; 
+    margin-bottom: 20px; 
+    box-sizing: border-box;
+    }
+
+.dadosForm input ::placeholder{
+font-size: 14px;
+color: black;
+}
+
+.dadosForm label{
+font-size: 14px;
+color: black;
+font-weight: 550;
+width: 280px; 
+display: block; 
+margin-bottom: 5px;
+}
+
+
+.dadosForm button{
+font-size: 14px;
+color: white;
+background-color: #EC4A7D;
+width: 100%; 
+max-width: 280px; 
+height: 35px;
+border-radius: 8px;
+border: none;
+margin-top: 15px; 
+box-sizing: border-box;
+}

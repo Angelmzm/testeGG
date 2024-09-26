@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Modal Atualizar Produto </title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Alfa+Slab+One&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="modalAtlProduto.css">
+</head>
+<body>
+
+    <button id="openModalBtn">Atualizar Produto</button>
+
+    <div id="atualizarProdutoModal" class="modal">
+        <div class="modalContainer">
+            <div class="headerModal">
+                <h1>Atualizar Produto</h1>
+                <img src="imagens/close.png" alt="Fechar" id="closeModalBtn">
+            </div>
+           
+            <form class="atualizarForm" action="https://webhook.site/046e3a18-77e2-47ae-a451-41a8c4d28fef" method="put">
+
+                <div>
+                    <label for="nomeProdutoAtualizar">Nome:</label>
+                    <input type="text" id="nomeProdutoAtualizar" name="nomeProduto" placeholder="Ex: Base da Virginia" required>
+                </div>
+               
+   
+                <div>
+                    <label for="precoAtualizar">Preço:</label>
+                    <input type="number" id="precoAtualizar" name="preco" step="0.01"  placeholder="R$ 0,00"  required>
+                </div>
+               
+   
+                <div>
+                    <label for="descricaoAtualizar">Descrição:</label>
+                    <input type="text" id="descricaoAtualizar" name="descricao" placeholder="Descrição" required>
+                </div>
+               
+                <div>
+                    <label for="detalhesAtulizar">Detalhes:</label>
+                    <input type="text" id="detalhesAtulizar" name="detalhes" placeholder="Detalhes" required>
+                </div>
+               
+                <div>
+                    <label for="lancamentoAtualizar">Lançamento:</label>      
+                    <select id="lancamentoAtualizar" name="lancamentoAtualizar" required>                  
+                        <option value="" disabled selected>Selecione</option>                  
+                        <option value="1">Sim</option>                            
+                        <option value="0">Não</option>          
+                    </select>
+                </div>
+           
+                <div>
+                    <label for="categoria">Categoria:</label>
+                    <select id="categoria" name="categoria" required>
+                        <option value="" disabled selected>Selecione</option>                  
+                        <option value="0">Maquiagem</option>                  
+                        <option value="1">Perfume</option>                  
+                        <option value="2">Cabelo</option>                  
+                        <option value="3">Unhas</option>                
+                    </select>
+                </div>
+       
+                <div>
+                    <label for="novoProdutoAtualizar">Novo Produto:</label>              
+                    <select id="novoProdutoAtualizar" name="novoProdutoAtualizar" required>                  
+                        <option value="" disabled selected>Selecione</option>                  
+                        <option value="1">Sim</option>                  
+                        <option value="0">Não</option>                
+                    </select>
+                </div>
+               
+                <div>
+                    <label for="imagem_capaAtualizar">Imagem de Capa (URL):</label>
+                    <input type="url" id="imagem_capaAtualizar" name="imagem_capaAtualizar" placeholder="https://exemplo.com" >
+                </div>
+
+
+                <div>
+                    <label for="imagem_galeria1Atualizar">Imagem da Galeria 1 (URL):</label>
+                    <input type="url" id="imagem_galeria1" name="imagem_galeria1" placeholder="https://exemplo.com">
+                </div>
+               
+                <div>
+                    <label for="imagem_galeria2">Imagem da Galeria 2 (URL):</label>
+                    <input type="url" id="imagem_galeria2" name="imagem_galeria2" placeholder="https://exemplo.com">
+                </div>
+
+
+                <div>
+                    <label for="imagem_galeria3">Imagem da Galeria 3 (URL):</label>
+                    <input type="url" id="imagem_galeria3" name="imagem_galeria3" placeholder="https://exemplo.com">
+                </div>
+
+
+                <button class="bttAtl" type="submit">Atualizar</button>
+               
+            </form>
+        </div>
+    </div>
+
+
+    <script>
+        // Abrir o Modal
+        var modal = document.getElementById("atualizarProdutoModal");
+        var openModalBtn = document.getElementById("openModalBtn");
+        var closeModalBtn = document.getElementById("closeModalBtn");
+
+        openModalBtn.onclick = function() {
+            modal.style.display = "flex";
+        }
+
+        // Fechar o Modal
+        closeModalBtn.onclick = function() {
+            modal.style.display = "none";
+        }
+
+        // Fechar ao clicar fora do modal
+        window.onclick = function(event) {
+            if (event.target == modal) {
+                modal.style.display = "none";
+            }
+        }
+    
+    </script>
+
+
+</body>
+</html>

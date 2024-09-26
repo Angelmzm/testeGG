@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GLitter&Glamour</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Alfa+Slab+One&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <main>
+
+        <div class="loginContainer">
+
+            <h1 class="tLogin">Login</h1>
+            
+            <form class="loginForm" action="https://webhook.site/046e3a18-77e2-47ae-a451-41a8c4d28fef" method="post">
+                <div class="labelLogin">
+                    <label for="usuario">Email</label>               
+                    <input type="email" id="usuario" name="email" placeholder="Digitar email" required>
+                </div>
+                
+                <div class="labelLogin">
+                    <label for="senha">Senha</label>
+                    <input type="password" id="senha" name="senha" placeholder="Digitar senha" required>
+                </div>
+                
+                <button type="submit">Entrar</button>
+        
+            </form>
+            
+            <p> Ainda não possui conta?</p>
+
+            <button class="bttCadastroLogin" type="submit">Cadastrar</button>
+
+        </div>
+
+        <div class="cadastroContainer">
+            <h2 class="tCadastro">Cadastro</h2>
+            <form class="cadastroForm" action="https://webhook.site/046e3a18-77e2-47ae-a451-41a8c4d28fef" method="post">
+                <div>
+                    <label for="nome">Nome:</label>
+                    <input type="text" id="nome" name="nome" placeholder="Digite seu nome">
+                </div>
+                
+                <div>
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" placeholder="Digite seu email" required>
+                </div>
+                
+                <div>
+                    <label for="cpf">CPF:</label>
+                    <input type="text" id="cpf" name="cpf" pattern="\d{3}\.\d{3}\.\d{3}-\d{2}" placeholder="000.000.000-00" required>
+                </div>
+                
+                <div>
+                    <label for="celular">Celular:</label>
+                    <input type="tel" id="celular" name="celular" pattern="\(\d{2}\) \d{5}-\d{4}" placeholder="(00) 00000-0000" required>
+                </div>
+                
+                <div>
+                    <label for="senha">Senha:</label>
+                    <input type="password" id="senha" name="senha" placeholder="digite sua senha" required>
+                </div>
+                
+                <div>
+                    <label for="confirmar_senha">Confirmar Senha:</label>
+                    <input type="password" id="confirmar_senha" name="confirmar_senha" placeholder="confirme sua senha" required>
+                </div>
+                
+                <button class="bttCadastrar" type="submit">Cadastrar</button>
+
+            </form>
+
+        </div>
+
+        <div class="adicionarProdutoContainer">
+
+            <div class="headerAdc">
+                <h1>Adicionar Produto</h1>
+                <img src="imagens/close.png" alt="botão de fechar">
+            </div>
+            
+            <form class="adicionarForm" action="https://webhook.site/046e3a18-77e2-47ae-a451-41a8c4d28fef" method="post">
+
+                <div>
+                    <label for="nomeProduto">Nome:</label>
+                    <input type="text" id="nomeProduto" name="nomeProduto" placeholder="Ex: Base da Virginia" required>
+                </div>
+                
+    
+                <div>
+                    <label for="preco">Preço:</label>
+                    <input type="number" id="preco" name="preco" step="0.01"  placeholder="R$ 0,00"  required>
+                </div>
+                
+    
+                <div>
+                    <label for="descricao">Descrição:</label>
+                    <input type="text" id="descricao" name="descricao" placeholder="Descrição" required>
+                </div>
+                
+                <div>
+                    <label for="detalhes">Detalhes:</label>
+                    <input type="text" id="detalhes" name="detalhes" placeholder="Detalhes" required>
+                </div>
+                
+                <div>
+                    <label for="lancamento">Lançamento:</label>       
+                    <select id="" name="" required>                   
+                        <option value="" disabled selected>Selecione</option>                   
+                        <option value="">Sim</option>                            
+                        <option value="">Não</option>          
+                    </select>
+                </div>
+            
+                <div>
+                    <label for="categoria">Categoria:</label>
+                    <select id="categoria" name="categoria" required>
+                        <option value="" disabled selected>Selecione</option>                   
+                        <option value="0">Maquiagem</option>                   
+                        <option value="1">Perfume</option>                   
+                        <option value="2">Cabelo</option>                   
+                        <option value="3">Unhas</option>                 
+                    </select>
+                </div>
+        
+                <div>
+                    <label for="novoProduto">Novo Produto:</label>               
+                    <select id="novoProduto" name="novoProduto" required>                   
+                        <option value="" disabled selected>Selecione</option>                   
+                        <option value="">Sim</option>                   
+                        <option value="">Não</option>                
+                    </select>
+                </div>
+                
+                <div>
+                    <label for="imagem_capa">Imagem de Capa (URL):</label>
+                    <input type="url" id="imagem_capa" name="imagem_capa" placeholder="https://exemplo.com/imagem.jpg" required>
+                </div>
+
+                <div>
+                    <label for="imagem_galeria1">Imagem da Galeria 1 (URL):</label>
+                    <input type="url" id="imagem_galeria1" name="imagem_galeria1" placeholder="https://exemplo.com/imagem1.jpg">
+                </div>
+                
+                <div>
+                    <label for="imagem_galeria2">Imagem da Galeria 2 (URL):</label>
+                    <input type="url" id="imagem_galeria2" name="imagem_galeria2" placeholder="https://exemplo.com/imagem2.jpg">
+                </div>
+
+                <div>
+                    <label for="imagem_galeria3">Imagem da Galeria 3 (URL):</label>
+                    <input type="url" id="imagem_galeria3" name="imagem_galeria3" placeholder="https://exemplo.com/imagem3.jpg">
+                </div>
+
+                <button class="bttAdc" type="submit">Adicionar</button>
+
+            </form>
+
+        </div>
+
+        <div class="atualizarProdutoContainer">
+
+            <div class="headerAtl">
+                <h1>Atualizar Produto</h1>
+                <img src="imagens/close.png" alt="botão de fechar">
+            </div>
+            <form class="atualizarForm" action="https://webhook.site/046e3a18-77e2-47ae-a451-41a8c4d28fef" method="put">
+
+                <div>
+                    <label for="nomeProdutoAtualizar">Nome:</label>
+                    <input type="text" id="nomeProdutoAtualizar" name="nomeProduto" placeholder="Ex: Base da Virginia" required>
+                </div>
+                
+    
+                <div>
+                    <label for="precoAtualizar">Preço:</label>
+                    <input type="number" id="precoAtualizar" name="preco" step="0.01"  placeholder="R$ 0,00"  required>
+                </div>
+                
+    
+                <div>
+                    <label for="descricaoAtualizar">Descrição:</label>
+                    <input type="text" id="descricaoAtualizar" name="descricao" placeholder="Descrição" required>
+                </div>
+                
+                <div>
+                    <label for="detalhesAtulizar">Detalhes:</label>
+                    <input type="text" id="detalhesAtulizar" name="detalhes" placeholder="Detalhes" required>
+                </div>
+                
+                <div>
+                    <label for="lancamentoAtualizar">Lançamento:</label>       
+                    <select id="lancamentoAtualizar" name="lancamentoAtualizar" required>                   
+                        <option value="" disabled selected>Selecione</option>                   
+                        <option value="1">Sim</option>                            
+                        <option value="0">Não</option>          
+                    </select>
+                </div>
+            
+                <div>
+                    <label for="categoria">Categoria:</label>
+                    <select id="categoria" name="categoria" required>
+                        <option value="" disabled selected>Selecione</option>                   
+                        <option value="0">Maquiagem</option>                   
+                        <option value="1">Perfume</option>                   
+                        <option value="2">Cabelo</option>                   
+                        <option value="3">Unhas</option>                 
+                    </select>
+                </div>
+        
+                <div>
+                    <label for="novoProdutoAtualizar">Novo Produto:</label>               
+                    <select id="novoProdutoAtualizar" name="novoProdutoAtualizar" required>                   
+                        <option value="" disabled selected>Selecione</option>                   
+                        <option value="1">Sim</option>                   
+                        <option value="0">Não</option>                
+                    </select>
+                </div>
+                
+                <div>
+                    <label for="imagem_capaAtualizar">Imagem de Capa (URL):</label>
+                    <input type="url" id="imagem_capaAtualizar" name="imagem_capaAtualizar" placeholder="https://exemplo.com" >
+                </div>
+
+                <div>
+                    <label for="imagem_galeria1Atualizar">Imagem da Galeria 1 (URL):</label>
+                    <input type="url" id="imagem_galeria1" name="imagem_galeria1" placeholder="https://exemplo.com">
+                </div>
+                
+                <div>
+                    <label for="imagem_galeria2">Imagem da Galeria 2 (URL):</label>
+                    <input type="url" id="imagem_galeria2" name="imagem_galeria2" placeholder="https://exemplo.com">
+                </div>
+
+                <div>
+                    <label for="imagem_galeria3">Imagem da Galeria 3 (URL):</label>
+                    <input type="url" id="imagem_galeria3" name="imagem_galeria3" placeholder="https://exemplo.com">
+                </div>
+
+                <button class="bttAtl" type="submit">Atualizar</button>
+                
+            </form>
+
+        </div>
+
+
+        <div class="atualizarDadosContainer">
+        
+            <div class="headerDados">
+                <h1>Dados pessoais</h1>
+                <img src="imagens/close.png" alt="botão de fechar">
+            </div>
+
+            <form class="dadosForm" action="https://webhook.site/046e3a18-77e2-47ae-a451-41a8c4d28fef" method="put">
+                <div>
+                    <label for="nome">Nome:</label>
+                    <input type="text" id="nome" name="nome" placeholder="Digite seu nome">
+                </div>
+                
+                <div>
+                    <label for="cpf">CPF:</label>
+                    <input type="text" id="cpf" name="cpf" pattern="\d{3}\.\d{3}\.\d{3}-\d{2}" placeholder="000.000.000-00" required>
+                </div>
+                
+                <div>
+                    <label for="celular">Celular:</label>
+                    <input type="tel" id="celular" name="celular" pattern="\(\d{2}\) \d{5}-\d{4}" placeholder="(00) 00000-0000" required>
+                </div>
+
+                <button type="submit">Atualizar</button>
+
+            </form>
+        
+    
+
+        </div>
+    
+    </main>
+    
+</body>
+</html>

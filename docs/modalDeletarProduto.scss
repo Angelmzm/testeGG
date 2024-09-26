@@ -1,0 +1,44 @@
+.deletarContainer {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 23px;
+    color: #00000099;
+
+    .texto1 {
+        color: black;
+        font-weight: bold;
+    }
+
+    .bttDeletar {
+        display: flex;
+        justify-content: flex-end;
+
+        .confirmar {
+            font-size: 14px;
+            color: white;
+            background-color: #EC4A7D;
+            width: 220px;
+            height: 35px;
+            border-radius: 18px;
+            border: none;
+            margin-top: 15px;
+            box-sizing: border-box;
+            cursor: pointer;
+            padding: 10px;
+        }
+
+        .cancelar {
+            font-size: 14px;
+            color: #EC4A7D;
+            background-color: white;
+            width: 220px;
+            height: 35px;
+            border-radius: 18px;
+            border: solid 1px #EC4A7D;
+            margin-top: 15px;
+            margin-right: 20px;
+            box-sizing: border-box;
+            cursor: pointer;
+            padding: 10px;
+        }
+    }
+}

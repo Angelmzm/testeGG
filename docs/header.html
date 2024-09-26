@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Header</title>
+    <link rel="stylesheet" href="header.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+
+
+</head>
+
+<body>
+    <header>
+
+        <div class="logoHeader">
+            <a href="admMainPage.html">
+            <img src="imagens/logoRosa.png" alt="Logo" >
+        </a>
+        </div>
+
+        <nav class="nav">
+            <ul>
+              <li><a href="lancamentoPage.html" href="#lancamento">Lançamentos</a></li>
+              <li><a href="maisVendidosPage.html" href="#maisVendidos">Mais Vendidos</a></li>
+              <li class="categoriasMenu">
+                <a href="#categorias" class="categoriasLink">Categorias</a>
+                <ul class="submenu">
+                  <li><a href="maquiagemPage.html">Maquiagem</a></li>
+                  <li><a href="unhasPage.html">Unhas </a></li>
+                  <li><a href="cabeloPage.html">Cabelo </a></li>
+                  <li><a href="perfumePage.html">Perfume </a></li>
+                </ul>
+              </li>
+            </ul>
+          </nav>
+
+        <div class="barraPesquisa">
+            <input type="text">
+            <button class="bttLupa" type="submit">
+                <img class="imgLupa" src="imagens/Lupa.png" alt="Buscar">
+            </button>
+        </div>
+
+        <div>
+            <a href="carrinhoPage.html">
+                <img class="imgCarrinho" src="imagens/carrinho.png" alt="Carrinho">
+            </a>
+        </div>
+
+        <div>
+            <a href="loginPage.html">
+                <img class="imgConta" src="imagens/conta.png" alt="dados pessoais">
+            </a>
+        </div>
+    </header>
+
+    <script>
+        // header Categorias
+        const categoriasLink = document.getElementById('categoriasLink');
+        const submenu = document.getElementById('submenu');
+
+        categoriasLink.addEventListener('click', function (event) {
+            event.preventDefault(); 
+
+            if (submenu.style.display === 'block') {
+                submenu.style.display = 'none';
+            } else {
+                submenu.style.display = 'block';
+            }
+        });
+
+    </script>
+</body>
+
+</html>
+
+
+
+</body>
+
+</html>
