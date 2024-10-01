@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -15,45 +16,60 @@
 
     <!-- header -->
     <header>
-
         <div class="logoHeader">
             <a href="admMainPage.html">
-            <img src="imagens/logoRosa.png" alt="Logo" >
-        </a>
+                <img src="imagens/logoRosa.png" alt="Logo">
+            </a>
         </div>
-
+        <div class="menuToggle" id="menuToggle">
+            <img src="imagens/menu.png" alt="Menu">
+        </div>
         <nav class="nav">
             <ul>
-              <li><a href="lancamentoPage.html" href="#lancamento">Lançamentos</a></li>
-              <li><a href="maisVendidosPage.html" href="#maisVendidos">Mais Vendidos</a></li>
-              <li class="categoriasMenu">
-                <a href="#categorias" class="categoriasLink">Categorias</a>
-                <ul class="submenu">
-                  <li><a href="maquiagemPage.html">Maquiagem</a></li>
-                  <li><a href="unhasPage.html">Unhas </a></li>
-                  <li><a href="cabeloPage.html">Cabelo </a></li>
-                  <li><a href="perfumePage.html">Perfume </a></li>
-                </ul>
-              </li>
+                <li><a href="lancamentoPage.html">Lançamentos</a></li>
+                <li><a href="maisVendidosPage.html">Mais Vendidos</a></li>
+                <li class="categoriasMenu">
+                    <a class="categoriasLink" id="categoriasLink">Categorias</a>
+                    <ul class="submenu" id="submenu">
+                        <li><a href="maquiagemPage.html">Maquiagem</a></li>
+                        <li><a href="unhasPage.html">Unhas</a></li>
+                        <li><a href="cabeloPage.html">Cabelo</a></li>
+                        <li><a href="perfumePage.html">Perfume</a></li>
+                    </ul>
+                </li>
+                <li><a href="admMainPage.html">Início</a></li>
             </ul>
-          </nav>
-
+        </nav>
+        <nav class="navMenu">
+            <ul>
+                <li><a href="lancamentoPage.html">Lançamentos</a></li>
+                <li><a href="maisVendidosPage.html">Mais Vendidos</a></li>
+                <li class="categoriasMenu">
+                    <a class="categoriasLink" id="categoriasLink">Categorias</a>
+                    <ul class="submenu" id="submenu">
+                        <li><a href="maquiagemPage.html">Maquiagem</a></li>
+                        <li><a href="unhasPage.html">Unhas</a></li>
+                        <li><a href="cabeloPage.html">Cabelo</a></li>
+                        <li><a href="perfumePage.html">Perfume</a></li>
+                    </ul>
+                </li>
+                <li><a href="admMainPage.html">Início</a></li>
+            </ul>
+        </nav>
         <div class="barraPesquisa">
-            <input type="text">
+            <input type="text" placeholder="Buscar...">
             <button class="bttLupa" type="submit">
                 <img class="imgLupa" src="imagens/Lupa.png" alt="Buscar">
             </button>
         </div>
-
         <div>
             <a href="carrinhoPage.html">
                 <img class="imgCarrinho" src="imagens/carrinho.png" alt="Carrinho">
             </a>
         </div>
-
         <div>
             <a href="loginPage.html">
-                <img class="imgConta" src="imagens/conta.png" alt="dados pessoais">
+                <img class="imgConta" src="imagens/conta.png" alt="Dados Pessoais">
             </a>
         </div>
     </header>
@@ -63,7 +79,8 @@
         <div class="capaContainer">
             <div class="textoCapa">
                 <h1>Os melhores cosméticos, na melhor loja!</h1>
-                <h2>Uma loja feita para você que ama cosméticos, igual a nós! Compre fácil, rápido e com os melhores preços.</h2>
+                <h2>Uma loja feita para você que ama cosméticos, igual a nós! Compre fácil, rápido e com os melhores
+                    preços.</h2>
             </div>
             <div class="imagemCapa">
                 <img src="imagens/imagemCapa.png" alt="Imagem de produtos">
@@ -73,7 +90,7 @@
 
     <!-- Adicionar Produto -->
     <div class="adcProdutoAdm">
-        <button id="openModalAdcBtn" class="openModalBtn" > Adicionar Produto </button>
+        <button id="openModalAdcBtn" class="openModalBtn"> Adicionar Produto </button>
     </div>
 
     <!-- Lançamentos -->
@@ -90,20 +107,20 @@
                 </div>
             </div>
             <div class="lancamentoProduto">
-                <a href="admProdutoPage.html">           
+                <a href="admProdutoPage.html">
                     <img src="imagensProdutos/imageP2.png" alt="Produto 2">
                 </a>
                 <div class="lancamentoDetalhes">
                     <p class="nomeLancamento">KIluminador em Bastão </p>
-                    <p class="precoLancamento" >R$ 149,99</p>
+                    <p class="precoLancamento">R$ 149,99</p>
                 </div>
             </div>
             <div class="lancamentoProduto">
-                <a href="admProdutoPage.html">         
+                <a href="admProdutoPage.html">
                     <img src="imagensProdutos/imageP3.png" alt="Produto 3">
                 </a>
                 <div class="lancamentoDetalhes">
-                    <p class="nomeLancamento" >Kit Paleta de Sombra Pocket</p>
+                    <p class="nomeLancamento">Kit Paleta de Sombra Pocket</p>
                     <p class="precoLancamento">R$ 129,99</p>
                 </div>
             </div>
@@ -136,13 +153,13 @@
                 <img src="imagensProdutos/imageP2.png" alt="Produto 2">
                 <div class="maisVendidosDetalhes">
                     <p class="nomeMaisVendidos">KIluminador em Bastão </p>
-                    <p class="precoMaisVendidos" >R$ 149,99</p>
+                    <p class="precoMaisVendidos">R$ 149,99</p>
                 </div>
             </div>
             <div class="maisVendidosProduto">
                 <img src="imagensProdutos/imageP3.png" alt="Produto 3">
                 <div class="maisVendidosDetalhes">
-                    <p class="nomeMaisVendidos" >Kit Paleta de Sombra Pocket</p>
+                    <p class="nomeMaisVendidos">Kit Paleta de Sombra Pocket</p>
                     <p class="precoMaisVendidos">R$ 129,99</p>
                 </div>
             </div>
@@ -161,26 +178,26 @@
     <!-- Categorias -->
     <div id="categorias" class="categoriaContainer">
         <div class="categoria">
-        <h1>Categorias</h1>
-        <div class="categoriaOpcoes">
-            <a href="unhasPage.html" class="opcaoCategoria">
-                <p>Unhas</p>
-                <img src="imagensCategorias/unhas.png" alt="Unhas">
-            </a>
-            <a href="maquiagemPage.html" class="opcaoCategoria">
-                <p>Maquiagem</p>
-                <img src="imagensCategorias/maquiagem.png" alt="Maquiagem">
-            </a>
-            <a href="perfumePage.html" class="opcaoCategoria">
-                <p>Perfume</p>
-                <img src="imagensCategorias/perfume.png" alt="Perfume">
-            </a>
-            <a href="cabeloPage.html" class="opcaoCategoria">
-                <p>Cabelo</p>
-                <img src="imagensCategorias/cabelo.png" alt="Cabelo">
-            </a>
+            <h1>Categorias</h1>
+            <div class="categoriaOpcoes">
+                <a href="unhasPage.html" class="opcaoCategoria">
+                    <p>Unhas</p>
+                    <img src="imagensCategorias/unhas.png" alt="Unhas">
+                </a>
+                <a href="maquiagemPage.html" class="opcaoCategoria">
+                    <p>Maquiagem</p>
+                    <img src="imagensCategorias/maquiagem.png" alt="Maquiagem">
+                </a>
+                <a href="perfumePage.html" class="opcaoCategoria">
+                    <p>Perfume</p>
+                    <img src="imagensCategorias/perfume.png" alt="Perfume">
+                </a>
+                <a href="cabeloPage.html" class="opcaoCategoria">
+                    <p>Cabelo</p>
+                    <img src="imagensCategorias/cabelo.png" alt="Cabelo">
+                </a>
+            </div>
         </div>
-    </div>
     </div>
 
     <!-- Radapé -->
@@ -192,8 +209,8 @@
                 <p>Compre fácil, rápido e com os melhores preços.</p>
                 <!-- Ícones de redes sociais -->
                 <div class="icones">
-                    <a href="https://twitter.com" target="_blank" >
-                        <img src="imagens/twitter.png"Twitter">
+                    <a href="https://twitter.com" target="_blank">
+                        <img src="imagens/twitter.png" Twitter">
                     </a>
                     <a href="https://instagram.com" target="_blank">
                         <img src="imagens/insta.png" alt="Instagram">
@@ -242,8 +259,9 @@
                 <h1>Adicionar Produto</h1>
                 <img src="imagens/close.png" alt="Fechar" id="closeModalBtn">
             </div>
-           
-            <form class="adicionarForm" action="https://webhook.site/046e3a18-77e2-47ae-a451-41a8c4d28fef" method="post">
+
+            <form class="adicionarForm" action="https://webhook.site/046e3a18-77e2-47ae-a451-41a8c4d28fef"
+                method="post">
                 <div>
                     <label for="nomeProduto">Nome:</label>
                     <input type="text" id="nomeProduto" name="nomeProduto" placeholder="Ex: Base da Virginia" required>
@@ -288,19 +306,23 @@
                 </div>
                 <div>
                     <label for="imagem_capa">Imagem de Capa (URL):</label>
-                    <input type="url" id="imagem_capa" name="imagem_capa" placeholder="https://exemplo.com/imagem.jpg" required>
+                    <input type="url" id="imagem_capa" name="imagem_capa" placeholder="https://exemplo.com/imagem.jpg"
+                        required>
                 </div>
                 <div>
                     <label for="imagem_galeria1">Imagem da Galeria 1 (URL):</label>
-                    <input type="url" id="imagem_galeria1" name="imagem_galeria1" placeholder="https://exemplo.com/imagem1.jpg">
+                    <input type="url" id="imagem_galeria1" name="imagem_galeria1"
+                        placeholder="https://exemplo.com/imagem1.jpg">
                 </div>
                 <div>
                     <label for="imagem_galeria2">Imagem da Galeria 2 (URL):</label>
-                    <input type="url" id="imagem_galeria2" name="imagem_galeria2" placeholder="https://exemplo.com/imagem2.jpg">
+                    <input type="url" id="imagem_galeria2" name="imagem_galeria2"
+                        placeholder="https://exemplo.com/imagem2.jpg">
                 </div>
                 <div>
                     <label for="imagem_galeria3">Imagem da Galeria 3 (URL):</label>
-                    <input type="url" id="imagem_galeria3" name="imagem_galeria3" placeholder="https://exemplo.com/imagem3.jpg">
+                    <input type="url" id="imagem_galeria3" name="imagem_galeria3"
+                        placeholder="https://exemplo.com/imagem3.jpg">
                 </div>
                 <button class="bttAdc" type="submit">Adicionar</button>
             </form>
@@ -309,43 +331,70 @@
 
 
     <script>
-    
+
+        // Exibir ou ocultar os menus do header
+        document.addEventListener('DOMContentLoaded', function () {
+            const navMenu = document.querySelector('.navMenu');
+            const nav = document.querySelector('.nav');
+            const menuToggle = document.getElementById('menuToggle');
+            const categoriasLink = document.getElementById('categoriasLink');
+            const submenu = document.getElementById('submenu');
+
+            // Menu Toggle
+            if (menuToggle) {
+                menuToggle.addEventListener('click', function () {
+                    if (window.innerWidth <= 920) {
+                        navMenu.style.display = navMenu.style.display === 'block' ? 'none' : 'block';
+                    }
+                });
+            }
+
+            document.addEventListener('click', function (event) {
+                if (navMenu.style.display === 'block' && !menuToggle.contains(event.target) && !navMenu.contains(event.target)) {
+                    navMenu.style.display = 'none';
+                }
+            });
+
+            // Header Categorias
+            if (categoriasLink && submenu) {
+                categoriasLink.addEventListener('click', function (event) {
+                    event.preventDefault();
+                    submenu.style.display = submenu.style.display === 'block' ? 'none' : 'block';
+                });
+            }
+        });
+
+
         // Abrir o Modal
         var modal = document.getElementById("adicionarProdutoModal");
         var openModalBtn = document.getElementById("openModalAdcBtn");
         var closeModalBtn = document.getElementById("closeModalBtn");
 
-        openModalBtn.onclick = function() {
+        openModalBtn.onclick = function () {
             modal.style.display = "flex";
         }
 
         // Fechar o Modal
-        closeModalBtn.onclick = function() {
+        closeModalBtn.onclick = function () {
             modal.style.display = "none";
         }
 
         // Fechar ao clicar fora do modal
-        window.onclick = function(event) {
+        window.onclick = function (event) {
             if (event.target == modal) {
                 modal.style.display = "none";
             }
         }
 
-        // header Categorias
-        const categoriasLink = document.getElementById('categoriasLink');
-        const submenu = document.getElementById('submenu');
 
-        categoriasLink.addEventListener('click', function (event) {
-            event.preventDefault(); 
-
-            if (submenu.style.display === 'block') {
-                submenu.style.display = 'none';
-            } else {
-                submenu.style.display = 'block';
-            }
+        document.getElementById('menuToggle').addEventListener('click', function () {
+            const nav = document.querySelector('.nav');
+            nav.style.display = nav.style.display === 'block' ? 'none' : 'block';
         });
-        
+
+
     </script>
-    
+
 </body>
+
 </html>

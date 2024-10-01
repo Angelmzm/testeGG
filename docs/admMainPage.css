@@ -19,6 +19,20 @@ header a {
   text-decoration: none;
   color: #EC4A7D;
 }
+header .menuToggle {
+  display: none;
+}
+@media (max-width: 920px) {
+  header .menuToggle {
+    display: block;
+  }
+}
+header .menuToggle img {
+  height: 30px;
+}
+header .nav {
+  display: block;
+}
 header .nav ul {
   list-style: none;
   padding: 0;
@@ -29,6 +43,9 @@ header .nav ul li {
   color: #EC4A7D;
   display: inline;
   margin-right: 10px;
+}
+header .navMenu {
+  display: none;
 }
 header .barraPesquisa {
   display: flex;
@@ -85,6 +102,36 @@ header .categoriasMenu:hover .submenu {
   display: block;
 }
 
+@media (max-width: 920px) {
+  .logoHeader {
+    display: none;
+  }
+  .nav {
+    display: none !important;
+  }
+  .navMenu {
+    display: block;
+    width: 50%;
+    background-color: #ffffff;
+    position: absolute;
+    top: 50px;
+    left: 0;
+    z-index: 1;
+  }
+  .navMenu ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+  }
+  .navMenu ul li {
+    font-family: "Montserrat", sans-serif;
+    color: #EC4A7D;
+    display: block;
+    margin: 10px 0;
+  }
+}
 /* Footer */
 footer {
   background-color: #EC4A7D;
@@ -158,6 +205,116 @@ footer .footerColunas .footerColuna ul li a:hover {
   text-decoration: underline;
 }
 
+@media (max-width: 600px) {
+  .footer {
+    flex-direction: column;
+  }
+  .footerContainer {
+    flex-direction: column;
+  }
+}
+/* Modal Styles */
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  justify-content: center;
+  align-items: center;
+}
+.modal .modalContainer {
+  background-color: #fefefe;
+  padding: 20px;
+  border-radius: 10px;
+  width: 90%;
+  max-width: 600px;
+  max-height: 90%;
+  overflow-y: auto;
+}
+.modal .modalContainer::-webkit-scrollbar {
+  width: 5px;
+}
+.modal .modalContainer::-webkit-scrollbar-thumb {
+  background-color: #EC4A7D;
+  border-radius: 20px;
+}
+.modal .modalContainer .headerModal {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.modal .modalContainer .headerModal h1 {
+  margin-bottom: 20px;
+  font-family: "Alfa Slab One", sans-serif;
+}
+.modal .modalContainer .headerModal img {
+  cursor: pointer;
+  width: 24px;
+  height: 24px;
+}
+
+.adicionarForm {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+.adicionarForm input {
+  padding: 8px;
+  border: 1px solid #EC4A7D;
+  border-radius: 4px;
+  width: 100%;
+  max-width: 280px;
+  margin-bottom: 20px;
+  box-sizing: border-box;
+  cursor: pointer;
+}
+.adicionarForm select {
+  padding: 8px;
+  border: 1px solid #EC4A7D;
+  border-radius: 4px;
+  width: 100%;
+  max-width: 280px;
+  margin-bottom: 20px;
+  box-sizing: border-box;
+  cursor: pointer;
+}
+.adicionarForm label {
+  font-size: 14px;
+  color: black;
+  font-weight: 550;
+  width: 280px;
+  display: block;
+  margin-bottom: 5px;
+}
+.adicionarForm button {
+  font-size: 14px;
+  color: white;
+  background-color: #EC4A7D;
+  width: 100%;
+  max-width: 280px;
+  height: 35px;
+  border-radius: 15px;
+  border: none;
+  margin-top: 15px;
+  box-sizing: border-box;
+  cursor: pointer;
+}
+.adicionarForm button:hover {
+  transform: scale(1.2);
+}
+
+body {
+  margin: 0;
+  padding: 0px;
+  box-sizing: border-box;
+  overflow-x: hidden;
+}
+
 /* Capa */
 .capa {
   background-color: #EC4A7D;
@@ -165,7 +322,8 @@ footer .footerColunas .footerColuna ul li a:hover {
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 40px;
+  width: 100vw;
+  padding: 0;
   box-sizing: border-box;
 }
 .capa .capaContainer {
@@ -173,8 +331,8 @@ footer .footerColunas .footerColuna ul li a:hover {
   justify-content: space-between;
   align-items: center;
   width: 100%;
-  max-width: 1200px;
-  max-height: 400px;
+  padding: 0px;
+  margin: 0;
   margin: 0 auto;
 }
 .capa .capaContainer .textoCapa {
@@ -182,6 +340,7 @@ footer .footerColunas .footerColuna ul li a:hover {
   height: 300px;
   display: flex;
   flex-direction: column;
+  padding: 0 20px;
 }
 .capa .capaContainer .textoCapa h1 {
   font-size: 40px;
@@ -407,99 +566,96 @@ footer .footerColunas .footerColuna ul li a:hover {
   font-size: 22px;
 }
 
-/* Modal Styles */
-.modal {
-  display: none;
-  position: fixed;
-  z-index: 1;
-  left: 0;
-  top: 0;
-  width: 100%;
-  height: 100%;
-  background-color: rgba(0, 0, 0, 0.5);
-  justify-content: center;
-  align-items: center;
-}
-.modal .modalContainer {
-  background-color: #fefefe;
-  padding: 20px;
-  border-radius: 10px;
-  width: 90%;
-  max-width: 600px;
-  max-height: 90%;
-  overflow-y: auto;
-}
-.modal .modalContainer::-webkit-scrollbar {
-  width: 5px;
-}
-.modal .modalContainer::-webkit-scrollbar-thumb {
-  background-color: #EC4A7D;
-  border-radius: 20px;
-}
-.modal .modalContainer .headerModal {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-.modal .modalContainer .headerModal h1 {
-  margin-bottom: 20px;
-  font-family: "Alfa Slab One", sans-serif;
-}
-.modal .modalContainer .headerModal img {
-  cursor: pointer;
-  width: 24px;
-  height: 24px;
-}
-
-.adicionarForm {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  width: 100%;
-}
-.adicionarForm input {
-  padding: 8px;
-  border: 1px solid #EC4A7D;
-  border-radius: 4px;
-  width: 100%;
-  max-width: 280px;
-  margin-bottom: 20px;
-  box-sizing: border-box;
-  cursor: pointer;
-}
-.adicionarForm select {
-  padding: 8px;
-  border: 1px solid #EC4A7D;
-  border-radius: 4px;
-  width: 100%;
-  max-width: 280px;
-  margin-bottom: 20px;
-  box-sizing: border-box;
-  cursor: pointer;
-}
-.adicionarForm label {
-  font-size: 14px;
-  color: black;
-  font-weight: 550;
-  width: 280px;
-  display: block;
-  margin-bottom: 5px;
-}
-.adicionarForm button {
-  font-size: 14px;
-  color: white;
-  background-color: #EC4A7D;
-  width: 100%;
-  max-width: 280px;
-  height: 35px;
-  border-radius: 15px;
-  border: none;
-  margin-top: 15px;
-  box-sizing: border-box;
-  cursor: pointer;
-}
-.adicionarForm button:hover {
-  transform: scale(1.2);
+/* Responsivo para telas menores */
+@media (max-width: 768px) {
+  .capa {
+    padding: 0;
+  }
+  .capa .capaContainer {
+    flex-direction: column;
+    text-align: start;
+    margin-bottom: 15px;
+    width: 100%;
+    padding: 0;
+  }
+  .capa .capaContainer .textoCapa {
+    max-width: 100%;
+    height: auto;
+    padding: 0 20px;
+  }
+  .capa .capaContainer .textoCapa h1 {
+    font-size: 20px;
+  }
+  .capa .capaContainer .textoCapa h2 {
+    font-size: 18px;
+  }
+  .capa .capaContainer .textoCapa p {
+    font-size: 14px;
+  }
+  .capa .capaContainer .imagemCapa img {
+    width: 100%;
+    max-height: 100%;
+  }
+  .lacamentos, .maisVendidos {
+    display: flex;
+    overflow-x: auto;
+    gap: 10px;
+    padding-bottom: 10px;
+  }
+  .lancamentoProduto, .maisVendidosProduto {
+    min-width: 250px; /* Define uma largura mínima para cada item */
+  }
+  .categoriaContainer {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+  }
+  .categoriaContainer .categoria {
+    background-color: #EC4A7D;
+    padding: 40px;
+    border-radius: 15px;
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    width: 1000px;
+  }
+  .categoriaContainer .categoria h1 {
+    color: black;
+    font-size: 36px;
+    margin-bottom: 20px;
+    font-family: "Alfa Slab One", sans-serif;
+  }
+  .categoriaContainer .categoria .categoriaOpcoes {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    font-family: "Montserrat", sans-serif;
+    font-weight: bold;
+  }
+  .categoriaContainer .categoria .categoriaOpcoes .opcaoCategoria {
+    background-color: white;
+    border-radius: 15px;
+    text-align: center;
+    padding: 20px;
+    transition: transform 0.3s ease;
+    text-decoration: none;
+    color: black;
+    max-width: 400px;
+    max-height: 200px;
+  }
+  .categoriaContainer .categoria .categoriaOpcoes .opcaoCategoria:hover {
+    transform: scale(1.05);
+  }
+  .categoriaContainer .categoria .categoriaOpcoes .opcaoCategoria img {
+    width: 100%;
+    border-radius: 10px;
+    max-width: 300px;
+    max-height: 150px;
+  }
+  .categoriaContainer .categoria .categoriaOpcoes .opcaoCategoria p {
+    margin-top: 10px;
+    font-size: 22px;
+  }
 }
 
 /*# sourceMappingURL=admMainPage.css.map */

@@ -18,6 +18,20 @@ header a {
   text-decoration: none;
   color: #EC4A7D;
 }
+header .menuToggle {
+  display: none;
+}
+@media (max-width: 920px) {
+  header .menuToggle {
+    display: block;
+  }
+}
+header .menuToggle img {
+  height: 30px;
+}
+header .nav {
+  display: block;
+}
 header .nav ul {
   list-style: none;
   padding: 0;
@@ -28,6 +42,9 @@ header .nav ul li {
   color: #EC4A7D;
   display: inline;
   margin-right: 10px;
+}
+header .navMenu {
+  display: none;
 }
 header .barraPesquisa {
   display: flex;
@@ -84,6 +101,36 @@ header .categoriasMenu:hover .submenu {
   display: block;
 }
 
+@media (max-width: 920px) {
+  .logoHeader {
+    display: none;
+  }
+  .nav {
+    display: none !important;
+  }
+  .navMenu {
+    display: block;
+    width: 50%;
+    background-color: #ffffff;
+    position: absolute;
+    top: 50px;
+    left: 0;
+    z-index: 1;
+  }
+  .navMenu ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+  }
+  .navMenu ul li {
+    font-family: "Montserrat", sans-serif;
+    color: #EC4A7D;
+    display: block;
+    margin: 10px 0;
+  }
+}
 /* Footer */
 footer {
   background-color: #EC4A7D;
@@ -157,6 +204,14 @@ footer .footerColunas .footerColuna ul li a:hover {
   text-decoration: underline;
 }
 
+@media (max-width: 600px) {
+  .footer {
+    flex-direction: column;
+  }
+  .footerContainer {
+    flex-direction: column;
+  }
+}
 /* Product Page */
 .produtoPageContainer {
   max-width: 1200px;

@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -13,45 +14,60 @@
 <body>
 
     <header>
-
         <div class="logoHeader">
             <a href="admMainPage.html">
-            <img src="imagens/logoRosa.png" alt="Logo" >
-        </a>
+                <img src="imagens/logoRosa.png" alt="Logo">
+            </a>
         </div>
-
+        <div class="menuToggle" id="menuToggle">
+            <img src="imagens/menu.png" alt="Menu">
+        </div>
         <nav class="nav">
             <ul>
-              <li><a href="lancamentoPage.html" href="#lancamento">Lançamentos</a></li>
-              <li><a href="maisVendidosPage.html" href="#maisVendidos">Mais Vendidos</a></li>
-              <li class="categoriasMenu">
-                <a href="#categorias" class="categoriasLink">Categorias</a>
-                <ul class="submenu">
-                  <li><a href="maquiagemPage.html">Maquiagem</a></li>
-                  <li><a href="unhasPage.html">Unhas </a></li>
-                  <li><a href="cabeloPage.html">Cabelo </a></li>
-                  <li><a href="perfumePage.html">Perfume </a></li>
-                </ul>
-              </li>
+                <li><a href="lancamentoPage.html">Lançamentos</a></li>
+                <li><a href="maisVendidosPage.html">Mais Vendidos</a></li>
+                <li class="categoriasMenu">
+                    <a class="categoriasLink" id="categoriasLink">Categorias</a>
+                    <ul class="submenu" id="submenu">
+                        <li><a href="maquiagemPage.html">Maquiagem</a></li>
+                        <li><a href="unhasPage.html">Unhas</a></li>
+                        <li><a href="cabeloPage.html">Cabelo</a></li>
+                        <li><a href="perfumePage.html">Perfume</a></li>
+                    </ul>
+                </li>
+                <li><a href="admMainPage.html">Início</a></li>
             </ul>
-          </nav>
-
+        </nav>
+        <nav class="navMenu">
+            <ul>
+                <li><a href="lancamentoPage.html">Lançamentos</a></li>
+                <li><a href="maisVendidosPage.html">Mais Vendidos</a></li>
+                <li class="categoriasMenu">
+                    <a class="categoriasLink" id="categoriasLink">Categorias</a>
+                    <ul class="submenu" id="submenu">
+                        <li><a href="maquiagemPage.html">Maquiagem</a></li>
+                        <li><a href="unhasPage.html">Unhas</a></li>
+                        <li><a href="cabeloPage.html">Cabelo</a></li>
+                        <li><a href="perfumePage.html">Perfume</a></li>
+                    </ul>
+                </li>
+                <li><a href="admMainPage.html">Início</a></li>
+            </ul>
+        </nav>
         <div class="barraPesquisa">
-            <input type="text">
+            <input type="text" placeholder="Buscar...">
             <button class="bttLupa" type="submit">
                 <img class="imgLupa" src="imagens/Lupa.png" alt="Buscar">
             </button>
         </div>
-
         <div>
             <a href="carrinhoPage.html">
                 <img class="imgCarrinho" src="imagens/carrinho.png" alt="Carrinho">
             </a>
         </div>
-
         <div>
             <a href="loginPage.html">
-                <img class="imgConta" src="imagens/conta.png" alt="dados pessoais">
+                <img class="imgConta" src="imagens/conta.png" alt="Dados Pessoais">
             </a>
         </div>
     </header>
@@ -67,7 +83,7 @@
                         <p class="precoLancamento">R$ 99,99</p>
                     </div>
                 </div>
-                
+
                 <div class="lancamentoProduto">
                     <img src="imagensProdutos/imageP2.png" alt="Produto 1">
                     <div class="lancamentoDetalhes">
@@ -75,7 +91,7 @@
                         <p class="precoLancamento">R$ 99,99</p>
                     </div>
                 </div>
-                
+
                 <div class="lancamentoProduto">
                     <img src="imagensProdutos/imageP2.png" alt="Produto 1">
                     <div class="lancamentoDetalhes">
@@ -83,71 +99,7 @@
                         <p class="precoLancamento">R$ 99,99</p>
                     </div>
                 </div>
-                
-                <div class="lancamentoProduto">
-                    <img src="imagensProdutos/imageP2.png" alt="Produto 1">
-                    <div class="lancamentoDetalhes">
-                        <p class="nomeLancamento">Blush em Bastão Rosa </p>
-                        <p class="precoLancamento">R$ 99,99</p>
-                    </div>
-                </div>
-                
-                <div class="lancamentoProduto">
-                    <img src="imagensProdutos/imageP2.png" alt="Produto 1">
-                    <div class="lancamentoDetalhes">
-                        <p class="nomeLancamento">Blush em Bastão Rosa </p>
-                        <p class="precoLancamento">R$ 99,99</p>
-                    </div>
-                </div>
-                
-                <div class="lancamentoProduto">
-                    <img src="imagensProdutos/imageP2.png" alt="Produto 1">
-                    <div class="lancamentoDetalhes">
-                        <p class="nomeLancamento">Blush em Bastão Rosa </p>
-                        <p class="precoLancamento">R$ 99,99</p>
-                    </div>
-                </div>
-                
-                <div class="lancamentoProduto">
-                    <img src="imagensProdutos/imageP2.png" alt="Produto 1">
-                    <div class="lancamentoDetalhes">
-                        <p class="nomeLancamento">Blush em Bastão Rosa </p>
-                        <p class="precoLancamento">R$ 99,99</p>
-                    </div>
-                </div>
-                
-                <div class="lancamentoProduto">
-                    <img src="imagensProdutos/imageP2.png" alt="Produto 1">
-                    <div class="lancamentoDetalhes">
-                        <p class="nomeLancamento">Blush em Bastão Rosa </p>
-                        <p class="precoLancamento">R$ 99,99</p>
-                    </div>
-                </div>
-                
-                <div class="lancamentoProduto">
-                    <img src="imagensProdutos/imageP2.png" alt="Produto 1">
-                    <div class="lancamentoDetalhes">
-                        <p class="nomeLancamento">Blush em Bastão Rosa </p>
-                        <p class="precoLancamento">R$ 99,99</p>
-                    </div>
-                </div>
-                
-                <div class="lancamentoProduto">
-                    <img src="imagensProdutos/imageP2.png" alt="Produto 1">
-                    <div class="lancamentoDetalhes">
-                        <p class="nomeLancamento">Blush em Bastão Rosa </p>
-                        <p class="precoLancamento">R$ 99,99</p>
-                    </div>
-                </div>
-                
-                <div class="lancamentoProduto">
-                    <img src="imagensProdutos/imageP2.png" alt="Produto 1">
-                    <div class="lancamentoDetalhes">
-                        <p class="nomeLancamento">Blush em Bastão Rosa </p>
-                        <p class="precoLancamento">R$ 99,99</p>
-                    </div>
-                </div>
-                
+
                 <div class="lancamentoProduto">
                     <img src="imagensProdutos/imageP2.png" alt="Produto 1">
                     <div class="lancamentoDetalhes">
@@ -179,7 +131,71 @@
                         <p class="precoLancamento">R$ 99,99</p>
                     </div>
                 </div>
-                
+
+                <div class="lancamentoProduto">
+                    <img src="imagensProdutos/imageP2.png" alt="Produto 1">
+                    <div class="lancamentoDetalhes">
+                        <p class="nomeLancamento">Blush em Bastão Rosa </p>
+                        <p class="precoLancamento">R$ 99,99</p>
+                    </div>
+                </div>
+
+                <div class="lancamentoProduto">
+                    <img src="imagensProdutos/imageP2.png" alt="Produto 1">
+                    <div class="lancamentoDetalhes">
+                        <p class="nomeLancamento">Blush em Bastão Rosa </p>
+                        <p class="precoLancamento">R$ 99,99</p>
+                    </div>
+                </div>
+
+                <div class="lancamentoProduto">
+                    <img src="imagensProdutos/imageP2.png" alt="Produto 1">
+                    <div class="lancamentoDetalhes">
+                        <p class="nomeLancamento">Blush em Bastão Rosa </p>
+                        <p class="precoLancamento">R$ 99,99</p>
+                    </div>
+                </div>
+
+                <div class="lancamentoProduto">
+                    <img src="imagensProdutos/imageP2.png" alt="Produto 1">
+                    <div class="lancamentoDetalhes">
+                        <p class="nomeLancamento">Blush em Bastão Rosa </p>
+                        <p class="precoLancamento">R$ 99,99</p>
+                    </div>
+                </div>
+
+                <div class="lancamentoProduto">
+                    <img src="imagensProdutos/imageP2.png" alt="Produto 1">
+                    <div class="lancamentoDetalhes">
+                        <p class="nomeLancamento">Blush em Bastão Rosa </p>
+                        <p class="precoLancamento">R$ 99,99</p>
+                    </div>
+                </div>
+
+                <div class="lancamentoProduto">
+                    <img src="imagensProdutos/imageP2.png" alt="Produto 1">
+                    <div class="lancamentoDetalhes">
+                        <p class="nomeLancamento">Blush em Bastão Rosa </p>
+                        <p class="precoLancamento">R$ 99,99</p>
+                    </div>
+                </div>
+
+                <div class="lancamentoProduto">
+                    <img src="imagensProdutos/imageP2.png" alt="Produto 1">
+                    <div class="lancamentoDetalhes">
+                        <p class="nomeLancamento">Blush em Bastão Rosa </p>
+                        <p class="precoLancamento">R$ 99,99</p>
+                    </div>
+                </div>
+
+                <div class="lancamentoProduto">
+                    <img src="imagensProdutos/imageP2.png" alt="Produto 1">
+                    <div class="lancamentoDetalhes">
+                        <p class="nomeLancamento">Blush em Bastão Rosa </p>
+                        <p class="precoLancamento">R$ 99,99</p>
+                    </div>
+                </div>
+
             </div>
 
             <!-- Pagination -->
@@ -201,8 +217,8 @@
                 <p>Compre fácil, rápido e com os melhores preços.</p>
 
                 <div class="icones">
-                    <a href="https://twitter.com" target="_blank" >
-                        <img src="imagens/twitter.png" alt= "Twitter">
+                    <a href="https://twitter.com" target="_blank">
+                        <img src="imagens/twitter.png" alt="Twitter">
                     </a>
                     <a href="https://instagram.com" target="_blank">
                         <img src="imagens/insta.png" alt="Instagram">
@@ -245,21 +261,39 @@
     </footer>
 
     <script>
-        // header Categorias
-        const categoriasLink = document.getElementById('categoriasLink');
-        const submenu = document.getElementById('submenu');
+        // Exibir ou ocultar os menus do header
+        document.addEventListener('DOMContentLoaded', function () {
+            const navMenu = document.querySelector('.navMenu');
+            const nav = document.querySelector('.nav');
+            const menuToggle = document.getElementById('menuToggle');
+            const categoriasLink = document.getElementById('categoriasLink');
+            const submenu = document.getElementById('submenu');
 
-        categoriasLink.addEventListener('click', function (event) {
-            event.preventDefault(); 
+            // Menu Toggle
+            if (menuToggle) {
+                menuToggle.addEventListener('click', function () {
+                    if (window.innerWidth <= 920) {
+                        navMenu.style.display = navMenu.style.display === 'block' ? 'none' : 'block';
+                    }
+                });
+            }
 
-            if (submenu.style.display === 'block') {
-                submenu.style.display = 'none';
-            } else {
-                submenu.style.display = 'block';
+            document.addEventListener('click', function (event) {
+                if (navMenu.style.display === 'block' && !menuToggle.contains(event.target) && !navMenu.contains(event.target)) {
+                    navMenu.style.display = 'none';
+                }
+            });
+
+            // Header Categorias
+            if (categoriasLink && submenu) {
+                categoriasLink.addEventListener('click', function (event) {
+                    event.preventDefault();
+                    submenu.style.display = submenu.style.display === 'block' ? 'none' : 'block';
+                });
             }
         });
-
     </script>
 
 </body>
+
 </html>

@@ -1,0 +1,160 @@
+header {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  margin-top: 30px;
+  height: 50px;
+  border-bottom: 1px solid black;
+  margin-bottom: 15px;
+
+  .logoHeader {
+      height: 70px;
+
+      img {
+          height: 50px;
+      }
+  }
+
+  a {
+      text-decoration: none;
+      color: #EC4A7D;
+  }
+
+  .menuToggle {
+    display: none; 
+
+    @media (max-width: 920px) {
+        display: block; 
+    }
+
+    img {
+        height: 30px; 
+    }
+}
+
+
+  .nav {
+
+    display: block;
+
+      ul {
+          list-style: none;
+          padding: 0;
+          margin: 0;
+
+          li {
+              font-family: 'Montserrat', sans-serif;
+              color: #EC4A7D;
+              display: inline;
+              margin-right: 10px;
+          }
+      }
+  }
+
+  .navMenu {
+    display: none;
+  }
+
+  .barraPesquisa {
+      display: flex;
+      justify-content: center;
+
+      input {
+          border: 1px solid #dcdcdc;
+          border-radius: 10px;
+          width: 250px;
+          height: 25px;
+          background-color: #dcdcdc;
+      }
+
+      .bttLupa {
+          border: none;
+          background: none;
+      }
+
+      .imgLupa {
+          height: 30px;
+      }
+  }
+
+  .imgCarrinho, .imgConta {
+      height: 30px;
+  }
+
+  .categoriasMenu {
+      position: relative;
+
+      .submenu {
+          display: none;
+          position: absolute;
+          background-color: #ffffff;
+          padding: 10px;
+          list-style: none;
+          margin: 0;
+          border: 1px solid #dcdcdc;
+          z-index: 1;
+          top: 100%;
+          left: 0;
+          width: 120px;
+
+          li {
+              margin-bottom: 5px;
+              display: block;
+
+              a {
+                  color: #EC4A7D;
+                  text-decoration: none;
+                  display: block;
+                  padding: 5px;
+
+                  &:hover {
+                      text-decoration: underline;
+                      background-color: #f0f0f0;
+                  }
+              }
+          }
+      }
+
+      &:hover .submenu {
+          display: block;
+      }
+  }
+}
+
+@media (max-width: 920px) {
+
+  .logoHeader {
+      display: none; 
+  }
+
+  .nav {
+    display: none !important;
+  }
+
+  .navMenu {
+      display: block;
+      width: 50%; 
+      background-color: #ffffff;
+      position: absolute; 
+      top: 50px; 
+      left: 0; 
+      z-index: 1; 
+
+      ul {
+          list-style: none;
+          padding: 0;
+          margin: 0;
+          display: flex;
+          flex-direction: column;
+
+          li {
+              font-family: 'Montserrat', sans-serif;
+              color: #EC4A7D;
+              display: block; 
+              margin: 10px 0; 
+          }
+      }
+  }
+}
+
+

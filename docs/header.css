@@ -1,0 +1,134 @@
+header {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  margin-top: 30px;
+  height: 50px;
+  border-bottom: 1px solid black;
+  margin-bottom: 15px;
+}
+header .logoHeader {
+  height: 70px;
+}
+header .logoHeader img {
+  height: 50px;
+}
+header a {
+  text-decoration: none;
+  color: #EC4A7D;
+}
+header .menuToggle {
+  display: none;
+}
+@media (max-width: 920px) {
+  header .menuToggle {
+    display: block;
+  }
+}
+header .menuToggle img {
+  height: 30px;
+}
+header .nav {
+  display: block;
+}
+header .nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+header .nav ul li {
+  font-family: "Montserrat", sans-serif;
+  color: #EC4A7D;
+  display: inline;
+  margin-right: 10px;
+}
+header .navMenu {
+  display: none;
+}
+header .barraPesquisa {
+  display: flex;
+  justify-content: center;
+}
+header .barraPesquisa input {
+  border: 1px solid #dcdcdc;
+  border-radius: 10px;
+  width: 250px;
+  height: 25px;
+  background-color: #dcdcdc;
+}
+header .barraPesquisa .bttLupa {
+  border: none;
+  background: none;
+}
+header .barraPesquisa .imgLupa {
+  height: 30px;
+}
+header .imgCarrinho, header .imgConta {
+  height: 30px;
+}
+header .categoriasMenu {
+  position: relative;
+}
+header .categoriasMenu .submenu {
+  display: none;
+  position: absolute;
+  background-color: #ffffff;
+  padding: 10px;
+  list-style: none;
+  margin: 0;
+  border: 1px solid #dcdcdc;
+  z-index: 1;
+  top: 100%;
+  left: 0;
+  width: 120px;
+}
+header .categoriasMenu .submenu li {
+  margin-bottom: 5px;
+  display: block;
+}
+header .categoriasMenu .submenu li a {
+  color: #EC4A7D;
+  text-decoration: none;
+  display: block;
+  padding: 5px;
+}
+header .categoriasMenu .submenu li a:hover {
+  text-decoration: underline;
+  background-color: #f0f0f0;
+}
+header .categoriasMenu:hover .submenu {
+  display: block;
+}
+
+@media (max-width: 920px) {
+  .logoHeader {
+    display: none;
+  }
+  .nav {
+    display: none !important;
+  }
+  .navMenu {
+    display: block;
+    width: 50%;
+    background-color: #ffffff;
+    position: absolute;
+    top: 50px;
+    left: 0;
+    z-index: 1;
+  }
+  .navMenu ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+  }
+  .navMenu ul li {
+    font-family: "Montserrat", sans-serif;
+    color: #EC4A7D;
+    display: block;
+    margin: 10px 0;
+  }
+}
+
+/*# sourceMappingURL=header.css.map */

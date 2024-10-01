@@ -210,3 +210,22 @@ footer {
         }
     }
 }
+
+@media (max-width: 768px) {
+
+    .carrinhoContent{
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        align-content: center;
+
+
+        .carrinhoProdutos{
+            width: 80%;
+        }
+
+        .totalContainer{
+            width: 80%;
+        }
+    }
+}

@@ -83,3 +83,13 @@ footer {
         }
     }
 }
+
+@media (max-width: 600px) {
+    .footer{
+        flex-direction: column;
+    }
+
+    .footerContainer{
+        flex-direction: column;
+    }
+}
